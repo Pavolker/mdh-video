@@ -1,0 +1,16 @@
+[build]
+  # Build command
+  command = "npm run build"
+  
+  # Output directory
+  publish = "dist"
+
+# Redirect rules for SPA (Single Page Application)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Environment variables hint (configure in Netlify dashboard)
+# VITE_YOUTUBE_API_KEY = "your-youtube-api-key"
+# VITE_GEMINI_API_KEY = "your-gemini-api-key"
